@@ -4,6 +4,8 @@ Clone project to your local machine.
 
 Create database file in laravel_folder/database/database.sqlite for local development.
 
+Rename .env.example to .env
+
 Edit .env file.
 
 Delete this strings:
@@ -15,7 +17,7 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 
-And add this:
+And add this one:
 
 DB_CONNECTION=sqlite
 DB_FOREIGN_KEYS=true
