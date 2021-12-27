@@ -11,4 +11,6 @@
 |
 */
 
-Route::resource('/', 'UserController');
+Route::get('/', 'UserController@index')->name('home');
+
+Route::resource('/user', 'UserController');

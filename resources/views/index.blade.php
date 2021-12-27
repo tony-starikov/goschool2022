@@ -9,7 +9,7 @@
         <div class="col text-center">
             <h1>Welcome to the club!</h1>
 
-            <form method="POST" class="w-50 mx-auto my-2" action="{{ route('store') }}">
+            <form method="POST" class="w-50 mx-auto my-2" action="{{ route('user.store') }}">
                 @csrf
 
                 @error('email')
@@ -46,6 +46,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Registration date</th>
+                        <th scope="col"></th>
                     </tr>
                     </thead>
 
@@ -58,6 +59,15 @@
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ date("Y-m-d G:i:s", $user->time)  }}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <form id="delete-form" action="{{ route('user.destroy', $user) }}" method="POST">
+                                        @method('DELETE')
+                                        @csrf
+                                        <button type="submit" class="btn btn-link">DELETE</button>
+                                    </form>
+                                </div>
+                            </td>
                         </tr>
 
                     @endforeach

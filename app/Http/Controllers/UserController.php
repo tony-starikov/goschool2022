@@ -50,7 +50,7 @@ class UserController extends Controller
 
         User::create($parameters);
 
-        return redirect()->route('index');
+        return redirect()->route('home');
     }
 
     /**
@@ -95,6 +95,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return redirect()->route('home');
     }
 }
