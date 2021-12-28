@@ -11,15 +11,21 @@ Edit .env file.
 Delete this strings:
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=laravel
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 And add this one:
 
 DB_CONNECTION=sqlite
+
 DB_FOREIGN_KEYS=true
 
 I'm using https://laradock.io/ to develop projects locally.
