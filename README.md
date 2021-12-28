@@ -32,7 +32,9 @@ I'm using https://laradock.io/ to develop projects locally.
 
 Clone laradock to your project folder: git clone https://github.com/laradock/laradock.git
 
-Go to the laradock folder and run in the terminal: docker-compose up -d nginx mysql phpmyadmin redis workspace
+Check instructions https://laradock.io/getting-started/
+
+Start laradock
 
 Then run:
 
