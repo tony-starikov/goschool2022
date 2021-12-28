@@ -34,10 +34,12 @@ Then run:
 
 2. composer install
 
-3. php artisan key:generate.
+3. php artisan key:generate
 
-4. php artisan migrate --seed.
+4. php artisan migrate:refresh
 
 Check http://localhost/
+
+Link to the project on heroku https://goschool2022.herokuapp.com
 
 Enjoy)
