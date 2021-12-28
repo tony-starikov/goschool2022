@@ -1,8 +1,8 @@
 ## Instalation
 
-Clone project to your local machine.
+Clone the project to your local machine: git clone https://github.com/tony-starikov/goschool2022.git
 
-Create database file in laravel_folder/database/database.sqlite for local development.
+Create database.sqlite file in project_folder/database/ for local development.
 
 Rename .env.example to .env
 
